@@ -1,0 +1,15 @@
+#!/bin/tcsh
+
+set n=$argv
+set i = 0
+set j = 1
+set sum = 0
+while ($n > 1 )
+	@ sum = $i + $j
+	@ i = $j
+	@ j = $sum
+	@ n--
+end
+
+echo $sum	
+
